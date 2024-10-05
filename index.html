@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navon Global Languages Institute</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+      <!-- Font Awesome CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-navbar">
+    <div class="container d-flex justify-content-between align-items-center">
+        <!-- Phone Call Icon (Visible in Mobile View Only) -->
+        <a href="tel:+94777809550" class="navbar-phone-icon d-lg-none">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+
+        <!-- Centered Logo -->
+        <a class="navbar-brand mx-auto" href="index.html">
+            <img src="logo.png" alt="Navon Global Language Institute" style="height: 55px;">
+        </a>
+
+        <!-- Toggle Button for Mobile Navigation -->
+        <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="openNav()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible Navbar Links for Desktop View -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="about us.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#universities-offer">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#testimonial-section">Testimonials</a></li>
+                <li class="nav-item"><a class="nav-link" href="#unique-gallery">Gallery</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            <div class="navbar-nav">
+                <a class="nav-link" href="https://www.instagram.com/navonstudyinternational"><i class="fab fa-instagram"></i></a>
+                <a class="nav-link" href="https://www.facebook.com/profile.php?id=61563054991331"><i class="fab fa-facebook"></i></a>
+                <a class="nav-link" href="https://www.linkedin.com/company/navonstudyinternational"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile Navigation Bar -->
+<nav class="navbar-mobile">
+    <div class="navbar-content">
+        <!-- Close Button -->
+        <button class="close-btn" onclick="closeNav()">&times;</button>
+        
+        <!-- Mobile Navbar Links -->
+        <ul>
+            <li>
+                <a href="about us.html">About</a>
+                <p class="nav-description">Learn more about our mission and values.</p>
+            </li>
+            <li>
+                <a href="#universities-offer">Services</a>
+                <p class="nav-description">Explore the services we offer to our students.</p>
+            </li>
+            <li>
+                <a href="#testimonial-section">Testimonials</a>
+                <p class="nav-description">See what our students have to say about us.</p>
+            </li>
+            <li>
+                <a href="#unique-gallery">Gallery</a>
+                <p class="nav-description">Check out our gallery of events and activities.</p>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+                <p class="nav-description">Get in touch with us for more information.</p>
+            </li>
+        </ul>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <a href="https://www.instagram.com/navonstudyinternational"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61563054991331"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/navonstudyinternational"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</nav>
+
+<!-- Overlay for Dark Background when Mobile Navbar is Open -->
+<div class="overlay" onclick="closeNav()"></div>
+
+
+
+    <!-- Hero Section -->
+    <header class="hero-section" id="home" data-aos="fade-up">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4">Welcome to Navon Global Languages Institute</h1>
+                    <p>Your journey to mastering global languages starts here.</p>
+                    <a href="#services" class="btn btn-primary">Explore Courses</a>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Add image or animation -->
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+<!-- About Us Section -->
+<section id="about" class="py-5" data-aos="fade-right">
+    <div class="container">
+        <h2 class="text-center mb-4 section-title">About Us</h2>
+        <hr class="section-hr">
+
+        <!-- Mobile View: Video Row -->
+        <div class="row d-md-none mb-4"> <!-- Visible only on mobile -->
+            <div class="col-12 text-center">
+                <video class="img-fluid rounded" autoplay loop muted playsinline>
+                    <source src="welcome.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
+        <!-- Desktop and Mobile Text Content -->
+        <div class="row align-items-center">
+            <!-- Left Side: Video for larger screens -->
+            <div class="col-md-6 d-none d-md-block"> <!-- Hide on mobile -->
+                <video class="img-fluid rounded" autoplay loop muted playsinline>
+                    <source src="welcome.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Right Side: Text -->
+            <div class="col-md-6">
+                <p>Navon Global Languages Institute (NGLI) stands as a beacon of linguistic excellence, committed to empowering individuals and organizations through the mastery of global languages.</p>
+                <p>Founded by <strong>Georgina Martt</strong>, a passionate polyglot fluent in 5 languages, NGLI was born from her vision to share the transformative power of language learning with others.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<!-- Mission overview(Big blue) -->
+<section id="mission-statement" class="container-fluid py-5 text-center text-white" style="background-color: #056579;">
+    <div class="container">
+      <h1 class="display-4 font-weight-bold mb-4" style="font-size: 2.5rem;">Mission & Vision</h1>
+      <p style="font-size: 1.1rem;"><strong>Mission: </strong> To break down linguistic barriers and foster global communication through superior language education.</p>
+
+      <p style="font-size: 1.1rem;"><strong>Vision: </strong> To be the premier language institute recognized globally for excellence in language training and cultural exchange.</p>
+    </div>
+  </section>
+
+
+
+
+
+<!-- Why Choose NGLI Section -->
+<!-- Why Choose NGLI Section -->
+<section id="why-choose-ngli" class="container py-5" data-aos="fade-left">
+    <div class="container">
+    <h2 class="text-center mb-4 section-title">Why Choose NGLI?</h2>
+    <hr class="section-hr">
+    
+    <div class="row align-items-center">
+      <!-- Left Side: Image -->
+      <div class="col-md-6 mb-4">
+        <img src="ngli-team.jpg" alt="Why Choose NGLI" class="img-fluid rounded">
+      </div>
+  
+      <!-- Right Side: Reasons in Table -->
+      <div class="col-md-6">
+        <table class="table table-bordered invest-table" style="border-color: #33dbeb; border-width: 3px">
+          <tbody>
+            <tr>
+              <td>
+                <h3 class="invest-heading text-center" style="color: #eb5204;">
+                  <i class="fas fa-chalkboard-teacher" style="color: #33dbeb;"></i><strong> Experienced Instructors</strong>
+                </h3>
+                <p class="invest-text text-center">Our team comprises highly qualified, native-speaking instructors who bring a wealth of knowledge and expertise.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 class="invest-heading text-center" style="color: #eb5204;">
+                  <i class="fas fa-tasks" style="color: #33dbeb;"></i><strong> Customized Learning Plans</strong> 
+                </h3>
+                <p class="invest-text text-center">We offer personalized learning paths tailored to meet the unique needs of our students and corporate clients.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 class="invest-heading text-center" style="color: #eb5204;">
+                  <i class="fas fa-laptop-code" style="color: #33dbeb;"></i><strong> State-of-the-Art Technology</strong>
+                </h3>
+                <p class="invest-text text-center">Utilizing the latest in educational technology, we provide a dynamic and interactive learning environment.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 class="invest-heading text-center" style="color: #eb5204;">
+                  <i class="fas fa-globe" style="color: #33dbeb;"></i><strong> Cultural Immersion</strong>
+                </h3>
+                <p class="invest-text text-center">Our courses include cultural insights and practices to enhance language proficiency and cultural understanding.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 class="invest-heading text-center" style="color: #eb5204;">
+                  <i class="fas fa-calendar-alt" style="color: #33dbeb;"></i><strong> Flexible Scheduling</strong>
+                </h3>
+                <p class="invest-text text-center">With a variety of scheduling options, we cater to the busy lives of professionals and students alike.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h3 class="invest-heading text-center" style="color: #eb5204;">
+                  <i class="fas fa-trophy" style="color: #33dbeb;"></i><strong> Proven Success</strong>
+                </h3>
+                <p class="invest-text text-center">With a track record of successful graduates, our programs are recognized and respected globally.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    </div>
+  </section>
+  
+  
+
+
+
+<!-- Courses Offered Section -->
+<section id="courses-offered" class="container py-5" data-aos="fade-right">
+    <h2 class="text-center mb-4 section-title">Courses Offered</h2>
+    <hr class="section-hr">
+
+    <div class="row">
+        <!-- Individual Courses -->
+        <div class="col-12 col-md-6 mb-4">
+            <div class="course-image" style="background-image: url('1.jpg');">
+                <div class="course-info">
+                    <h3>Individual Courses</h3>
+                    <p>Tailored language training designed to meet the specific needs and goals of each student.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Group Courses -->
+        <div class="col-12 col-md-6 mb-4">
+            <div class="course-image" style="background-image: url('2.jpg');">
+                <div class="course-info">
+                    <h3>Group Courses</h3>
+                    <p>Engaging and interactive group sessions that enhance collaborative learning.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Online Courses -->
+        <div class="col-12 col-md-6 mb-4">
+            <div class="course-image" style="background-image: url('3.jpg');">
+                <div class="course-info">
+                    <h3>Online Courses</h3>
+                    <p>Flexible and convenient language learning options accessible from anywhere in the world.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Offline Courses -->
+        <div class="col-12 col-md-6 mb-4">
+            <div class="course-image" style="background-image: url('4.jpg');">
+                <div class="course-info">
+                    <h3>Offline Courses</h3>
+                    <p>Traditional classroom settings that provide immersive and interactive learning experiences.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hybrid Courses -->
+        <div class="col-12 col-md-6 mb-4">
+            <div class="course-image" style="background-image: url('5.jpg');">
+                <div class="course-info">
+                    <h3>Hybrid Courses</h3>
+                    <p>A perfect blend of online and offline learning, offering flexibility and comprehensive education.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  
+
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+   <!-- Testimonials Section -->
+<section id="testimonials" class="py-5" data-aos="fade-up">
+    <div class="container">
+        <h2 class="text-center mb-4 section-title">Client's Testimonials</h2>
+        <hr class="section-hr">
+        <div class="row">
+            <!-- Testimonial Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card testimonial-card">
+                    <div class="testimonial-image-placeholder" style="background-image: url('testi1.jpg');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Tharindu Perera</h5>
+                        <p class="card-text">"NGLI transformed my career by helping me become fluent in German. Their flexible schedules and expert instructors made learning a breeze."</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card testimonial-card">
+                    <div class="testimonial-image-placeholder" style="background-image: url('testi2.jpg');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Shanika Jayasinghe</h5>
+                        <p class="card-text">"I took the French course at NGLI and it was fantastic. The hybrid learning model fit perfectly with my busy schedule."</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card testimonial-card">
+                    <div class="testimonial-image-placeholder" style="background-image: url('testi3.jpg');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Kasun Fernando</h5>
+                        <p class="card-text">"Learning Chinese at NGLI was an amazing experience. The instructors were patient and very knowledgeable."</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more cards for the rest of the testimonials -->
+             <!-- Testimonial Card 5 -->
+             <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card testimonial-card">
+                    <div class="testimonial-image-placeholder" style="background-image: url('testi4.jpg');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Harsha de Silva</h5>
+                        <p class="card-text">"NGLI's online English course helped me improve my business communication skills. Highly recommend it to professionals."</p>
+                    </div>
+                </div>
+            </div>
+             <!-- Testimonial Card 6 -->
+             <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card testimonial-card">
+                    <div class="testimonial-image-placeholder" style="background-image: url('testi5.jpg');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Anusha Senanayake</h5>
+                        <p class="card-text">"The individualized attention I received in my Hindi class was outstanding. NGLI truly cares about its students."</p>
+                    </div>
+                </div>
+            </div>
+             <!-- Testimonial Card 7 -->
+             <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card testimonial-card">
+                    <div class="testimonial-image-placeholder" style="background-image: url('testi6.jpg');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Nimal Wickramasinghe</h5>
+                        <p class="card-text">"The Sinhala course at NGLI was incredibly helpful for my job. The offline classes were very interactive."</p>
+                    </div>
+                </div>
+            </div>
+             <!-- Testimonial Card 8 -->
+             <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card testimonial-card">
+                    <div class="testimonial-image-placeholder" style="background-image: url('testi7.jpg');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Rashmi Wijesinghe</h5>
+                        <p class="card-text">"I learned Japanese at NGLI and the experience was exceptional. The course material was very comprehensive."</p>
+                    </div>
+                </div>
+            </div>
+             <!-- Testimonial Card 9 -->
+             <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card testimonial-card">
+                    <div class="testimonial-image-placeholder" style="background-image: url('testi8.jpg');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Kavinda Rathnayake</h5>
+                        <p class="card-text">"NGLI's Arabic course exceeded my expectations. The hybrid model made it easy to balance work and study."</p>
+                    </div>
+                </div>
+            </div>
+             <!-- Testimonial Card 10 -->
+             <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card testimonial-card">
+                    <div class="testimonial-image-placeholder" style="background-image: url('testi9.jpg');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Samanthi Silva</h5>
+                        <p class="card-text">"Taking the Romanian course at NGLI was one of the best decisions I made. The instructors were excellent."</p>
+                    </div>
+                </div>
+            </div>
+               <!-- Testimonial Card 10 -->
+               <div class="col-lg-4 col-md-6 mb-4">
+                <div class="card testimonial-card">
+                    <div class="testimonial-image-placeholder" style="background-image: url('testi10.jpg');"></div>
+                    <div class="card-body">
+                        <h5 class="card-title">Dinesh Pathirana</h5>
+                        <p class="card-text">"I needed to learn Korean for a job opportunity, and NGLI provided the best learning environment I could have asked for."</p>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+</section>
+
+<!-- Get in touch section -->
+<h2 class="text-center mb-4 section-title">Get Started Today</h2>
+<hr class="section-hr">
+<section id="contact" class="py-5 contact-bg" data-aos="fade-down">
+    <div class="overlay"></div> <!-- Overlay for opacity effect -->
+    <div class="container">
+        
+        <p class="text-center mb-5" style="color: rgb(255, 255, 255);">
+            Enhance your workforce's language proficiency and drive your business forward with Navon Global Languages Institute's corporate training programs. Contact us to schedule a consultation and discover how we can help your organization succeed.
+        </p>
+
+        <div class="row">
+            <!-- Info Box on the left -->
+            <div class="col-md-6 mb-4">
+                <div class="info-box">
+                    <h4>Contact Us</h4>
+                    <p><strong>Navon Global Languages Institute (NGLI)</strong></p>
+                    <p>Address: No. 655/6, Elvitigala Mawatha, Narahenpita, Colombo 05</p>
+                    <p>Phone: <a href="tel:+94777809550">+94 77 780 9550</a></p>
+                    <p>Email: <a href="mailto:contact@ngli.lk">contact@ngli.lk</a></p>
+                    <p>Website: <a href="http://www.ngli.lk" target="_blank">www.ngli.lk</a></p>
+                </div>
+            </div>
+
+    <!-- Contact Form on the right with neon effect -->
+<div class="col-md-6">
+    <div class="form-box">
+        <form>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- Footer -->
+<footer class="py-4" style="background-color: #ffffff; color: rgb(0, 0, 0);">
+    <div class="container text-center">
+        <p>&copy; 2024 Navon Global Languages Institute. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/navonstudyinternational" style="color: rgb(0, 144, 197); margin: 0 10px;"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61563054991331" style="color: rgb(0, 144, 197); margin: 0 10px;"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/navonstudyinternational" style="color: rgb(0, 144, 197); margin: 0 10px;"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+    <script>
+        function openNav() {
+            document.querySelector('.navbar-mobile').style.right = '0';
+            document.querySelector('.overlay').style.display = 'block';
+        }
+      
+        function closeNav() {
+            document.querySelector('.navbar-mobile').style.right = '-250px';
+            document.querySelector('.overlay').style.display = 'none';
+        }
+      
+        // Function to close mobile navbar when clicking a link
+        document.querySelectorAll('.navbar-mobile a').forEach(link => {
+            link.addEventListener('click', () => {
+                closeNav();
+            });
+        });
+      </script>
+    <script src="scripts.js"></script>
+</body>
+</html>
